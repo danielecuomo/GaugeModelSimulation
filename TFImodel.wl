@@ -1,11 +1,8 @@
-(* ::Package:: *)
+(* ::Input:: *)
+Needs["Wolfram`QuantumFramework`"]
 
 (* ::Input:: *)
-(*Needs["Wolfram`QuantumFramework`"]*)
-
-
-(* ::Input:: *)
-(*inp :=  QuantumState["UniformMixture"[2]]*)
+inp :=  QuantumState["UniformMixture"[2]]
 
 
 (* ::Input:: *)
