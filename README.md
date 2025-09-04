@@ -6,7 +6,7 @@
 
 This repository contains Wolfram Language code for simulating gauge-invariant models in imaginary time, computing thermal averages.
 
-### 🔹 How to open the files
+### How to open the files
 
 To explore the code and notebooks:
 
