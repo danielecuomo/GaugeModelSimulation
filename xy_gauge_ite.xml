@@ -1,0 +1,713 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="HTMLFiles/pmathml.xsl"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1 plus MathML 2.0//EN"
+        "HTMLFiles/xhtml-math11-f.dtd">
+
+<!-- Created with the Wolfram Language : www.wolfram.com -->
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+ <title>
+  xy_gauge_ite
+ </title>
+ <link href="HTMLFiles/xy_gauge_ite.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_1.gif" alt="xy_gauge_ite_1.gif" width="496" height="139" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mrow>
+   <msub>
+    <mi>&Lambda;</mi>
+    <mn>1</mn>
+   </msub>
+   <mo>=</mo>
+   <mrow>
+    <msub>
+     <mi>&Lambda;</mi>
+     <mn>2</mn>
+    </msub>
+    <mo>=</mo>
+    <mfrac>
+     <mi>&pi;</mi>
+     <mn>4</mn>
+    </mfrac>
+   </mrow>
+  </mrow>
+  <mo>;</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>exact</mi>
+  <mo>=</mo>
+  <mrow>
+   <mrow>
+    <mi>Table</mi>
+    <mo>[</mo>
+    <mrow>
+     <mrow>
+      <mrow>
+       <mi>F</mi>
+       <mo>=</mo>
+       <mrow>
+        <mi>Tr</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>MatrixExp</mi>
+         <mo>[</mo>
+         <mrow>
+          <mrow>
+           <mo>-</mo>
+           <mi>&beta;</mi>
+          </mrow>
+          <mo>&InvisibleTimes;</mo>
+          <mi>H</mi>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>;</mo>
+      <mtext>&#62371;</mtext>
+      <mrow>
+       <mi>energy</mi>
+       <mo>=</mo>
+       <mrow>
+        <mrow>
+         <mi>Tr</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>H</mi>
+          <mo>.</mo>
+          <mrow>
+           <mi>MatrixExp</mi>
+           <mo>[</mo>
+           <mrow>
+            <mrow>
+             <mo>-</mo>
+             <mi>&beta;</mi>
+            </mrow>
+            <mo>&InvisibleTimes;</mo>
+            <mi>H</mi>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>/</mo>
+        <mi>F</mi>
+       </mrow>
+      </mrow>
+      <mo>;</mo>
+      <mtext>&#62371;</mtext>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>&beta;</mi>
+        <mo>,</mo>
+        <mrow>
+         <mi>N</mi>
+         <mo>[</mo>
+         <mi>energy</mi>
+         <mo>]</mo>
+        </mrow>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>,</mo>
+     <mrow>
+      <mo>{</mo>
+      <mrow>
+       <mi>&beta;</mi>
+       <mo>,</mo>
+       <mrow>
+        <mrow>
+         <mi>Range</mi>
+         <mo>[</mo>
+         <mrow>
+          <mn>0.</mn>
+          <mo>,</mo>
+          <mn>0.15</mn>
+          <mo>,</mo>
+          <mn>0.015</mn>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>*</mo>
+        <mn>2</mn>
+        <mo>*</mo>
+        <mn>5</mn>
+       </mrow>
+      </mrow>
+      <mo>}</mo>
+     </mrow>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>[</mo>
+   <mrow>
+    <mo>[</mo>
+    <mrow>
+     <mi>All</mi>
+     <mo>,</mo>
+     <mn>2</mn>
+    </mrow>
+    <mo>]</mo>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>0.</mn>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>0.36672322791519807</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>0.7139884524096517</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.0262592888923243</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.2942745552621497</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.5152569136142304</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.6915089718471321</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.8283984423155726</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.932538085412796</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.0105222088056056</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.068232351033497</mn>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>Needs</mi>
+  <mo>[</mo>
+  <ms>Wolfram`QuantumFramework`</ms>
+  <mo>]</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_2.gif" alt="Graphics:PlotLabel /. Options[{sx := QuantumOperator[SX, Label-&amp;gt; Sqrt[X]], , sz := QuantumOperator[{S}, Label-&amp;gt; Sqrt[Z]], , RowBox[{inp,&nbsp;&nbsp;, :=, &amp;nbsp;&amp;nbsp;, RowBox[{InterpretationBox[FrameBox[TagBox[TooltipBox[PaneBox[GridBox[{{ItemBox[GraphicsBox[{Thickness[0.0025], {FaceForm[{RGBColor[0.960784, 0.505882, 0.196078], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{205., 22.8637}, {205., 212.317}, {246.018, 235.999}, {369.071, 307.044}, {369.071, 117.591}, {205., 22.8637}}, {{30.929, 307.044}, {153.982, 235.999}, {195., 212.317}, {195., 22.8637}, {30.929, 117.591}, {30.929, 307.044}}, {{200., 410.43}, {364.071, 315.704}, {241.018, 244.659}, {200., 220.977}, {158.982, 244.659}, {35.929, 315.704}, {200., 410.43}}, {{376.571, 320.034}, {202.5, 420.534}, {200.953, 421.427}, {199.047, 421.427}, {197.5, 420.534}, {23.429, 320.034}, {21.882, 319.141}, {20.929, 317.49}, {20.929, 315.704}, {20.929, 114.704}, {20.929, 112.918}, {21.882, 111.267}, {23.429, 110.374}, {197.5, 9.87369}, {198.273, 9.42669}, {199.137, 9.20369}, {200., 9.20369}, {200.863, 9.20369}, {201.727, 9.42669}, {202.5, 9.87369}, {376.571, 110.374}, {378.118, 111.267}, {379.071, 112.918}, {379.071, 114.704}, {379.071, 315.704}, {379.071, 317.49}, {378.118, 319.141}, {376.571, 320.034}}}]}, {FaceForm[{RGBColor[0.552941, 0.67451, 0.811765], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{44.929, 282.591}, {181., 204.03}, {181., 46.9089}, {44.929, 125.47}, {44.929, 282.591}}}]}, {FaceForm[{RGBColor[0.662745, 0.803922, 0.568627], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{355.071, 282.591}, {355.071, 125.47}, {219., 46.9089}, {219., 204.03}, {355.071, 282.591}}}]}, {FaceForm[{RGBColor[0.690196, 0.588235, 0.811765], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{200., 394.061}, {336.071, 315.5}, {200., 236.94}, {63.929, 315.5}, {200., 394.061}}}]}}, BaselinePosition -&gt; Scaled[0.15], ImageSize -&gt; 10]], ItemBox[StyleBox[RowBox[{System`Convert`CommonDump`ConvertText[QuantumState, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[ , System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], ShowAutoStyles -&gt; False, ShowStringCharacters -&gt; False, FontSize -&gt; 0.9 Inherited, FontColor -&gt; GrayLevel[0.1]]]}}, GridBoxSpacings -&gt; {System`Convert`CommonDump`ConvertText[Columns, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; {{0.25}}}], Alignment -&gt; {Left, Baseline}, BaseStyle -&gt; {LineSpacing -&gt; {0, 0}, LineBreakWithin -&gt; False}, BaselinePosition -&gt; Baseline, FrameMargins -&gt; {{3, 0}, {0, 0}}], RowBox[{System`Convert`CommonDump`ConvertText[PacletSymbol, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[[, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], RowBox[{System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[,, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumState, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], System`Convert`CommonDump`ConvertText[], System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], TooltipStyle -&gt; {ShowAutoStyles -&gt; True, ShowStringCharacters -&gt; True}], Annotation[#1, Defer[PacletSymbol[System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumState, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]]], System`Convert`CommonDump`ConvertText[Tooltip, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]] &amp; ], Background -&gt; RGBColor[0.968, 0.976, 0.984], BaselinePosition -&gt; Baseline, DefaultBaseStyle -&gt; {}, FrameMargins -&gt; {{0, 0}, {1, 1}}, FrameStyle -&gt; RGBColor[0.831, 0.847, 0.85], RoundingRadius -&gt; 4], PacletSymbol[System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumState, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]], TaggingRules -&gt; {System`Convert`CommonDump`ConvertText[Paclet, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Symbol, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumState, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}, BoxID -&gt; System`Convert`CommonDump`ConvertText[PacletSymbolBox, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], SelectWithContents -&gt; True, Selectable -&gt; False], [, UniformMixture[3], ]}]}]}]" width="343" height="75" style="vertical-align:middle;" usemap="#map_2" />
+<map name="map_2">
+<area shape="rect" coords="58,73,162,57" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumState]]" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_3.gif" alt="xy_gauge_ite_3.gif" width="794" height="52" style="vertical-align:middle;" usemap="#map_3" />
+<map name="map_3">
+<area shape="rect" coords="394,47,519,31" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumOperator]]" nohref="" />
+<area shape="rect" coords="26,47,151,31" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumOperator]]" nohref="" />
+<area shape="rect" coords="423,18,548,2" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumOperator]]" nohref="" />
+<area shape="rect" coords="55,18,179,2" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumOperator]]" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_4.gif" alt="xy_gauge_ite_4.gif" width="813" height="41" style="vertical-align:middle;" usemap="#map_4" />
+<map name="map_4">
+<area shape="rect" coords="48,18,222,2" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumCircuitOperator]]" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_5.gif" alt="xy_gauge_ite_5.gif" width="887" height="20" style="vertical-align:middle;" usemap="#map_5" />
+<map name="map_5">
+<area shape="rect" coords="48,18,222,2" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumCircuitOperator]]" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_6.gif" alt="xy_gauge_ite_6.gif" width="573" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_7.gif" alt="xy_gauge_ite_7.gif" width="665" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>approx</mi>
+  <mtext> </mtext>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mi>Prepend</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mi>Table</mi>
+     <mo>[</mo>
+     <mrow>
+      <mrow>
+       <mrow>
+        <mi>Total</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>KeyValueMap</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>Fxx</mi>
+          <mo>,</mo>
+          <mrow>
+           <mi>Txx</mi>
+           <mo>[</mo>
+           <mrow>
+            <mo>[</mo>
+            <mi>i</mi>
+            <mo>]</mo>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+       <mo>+</mo>
+       <mrow>
+        <mi>Total</mi>
+        <mo>[</mo>
+        <mrow>
+         <mi>KeyValueMap</mi>
+         <mo>[</mo>
+         <mrow>
+          <mi>Fzz</mi>
+          <mo>,</mo>
+          <mrow>
+           <mi>Tzz</mi>
+           <mo>[</mo>
+           <mrow>
+            <mo>[</mo>
+            <mi>i</mi>
+            <mo>]</mo>
+           </mrow>
+           <mo>]</mo>
+          </mrow>
+         </mrow>
+         <mo>]</mo>
+        </mrow>
+        <mo>]</mo>
+       </mrow>
+      </mrow>
+      <mo>,</mo>
+      <mrow>
+       <mo>{</mo>
+       <mrow>
+        <mi>i</mi>
+        <mo>,</mo>
+        <mrow>
+         <mi>Length</mi>
+         <mo>[</mo>
+         <mi>Txx</mi>
+         <mo>]</mo>
+        </mrow>
+       </mrow>
+       <mo>}</mo>
+      </mrow>
+     </mrow>
+     <mo>]</mo>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.</mn>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>0.</mn>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>0.3683832662116932</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>0.7264648010238076</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.0642392602083848</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.372285173586309</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.6420349126489273</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.8660190732386872</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.0380780143717976</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.1535343276864127</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.209321237705806</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.204063310528057</mn>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_8.gif" alt="Graphics:PlotLabel /. Options[{shots := 10000, , RowBox[{RowBox[{resx, =, RowBox[{RowBox[{RowBox[{RowBox[{Values, [, RowBox[{QuantumMeasurementSimulation, [, RowBox[{#, ,, RowBox[{InterpretationBox[FrameBox[TagBox[TooltipBox[PaneBox[GridBox[{{ItemBox[GraphicsBox[{Thickness[0.0025], {FaceForm[{RGBColor[0.960784, 0.505882, 0.196078], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{205., 22.8637}, {205., 212.317}, {246.018, 235.999}, {369.071, 307.044}, {369.071, 117.591}, {205., 22.8637}}, {{30.929, 307.044}, {153.982, 235.999}, {195., 212.317}, {195., 22.8637}, {30.929, 117.591}, {30.929, 307.044}}, {{200., 410.43}, {364.071, 315.704}, {241.018, 244.659}, {200., 220.977}, {158.982, 244.659}, {35.929, 315.704}, {200., 410.43}}, {{376.571, 320.034}, {202.5, 420.534}, {200.953, 421.427}, {199.047, 421.427}, {197.5, 420.534}, {23.429, 320.034}, {21.882, 319.141}, {20.929, 317.49}, {20.929, 315.704}, {20.929, 114.704}, {20.929, 112.918}, {21.882, 111.267}, {23.429, 110.374}, {197.5, 9.87369}, {198.273, 9.42669}, {199.137, 9.20369}, {200., 9.20369}, {200.863, 9.20369}, {201.727, 9.42669}, {202.5, 9.87369}, {376.571, 110.374}, {378.118, 111.267}, {379.071, 112.918}, {379.071, 114.704}, {379.071, 315.704}, {379.071, 317.49}, {378.118, 319.141}, {376.571, 320.034}}}]}, {FaceForm[{RGBColor[0.552941, 0.67451, 0.811765], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{44.929, 282.591}, {181., 204.03}, {181., 46.9089}, {44.929, 125.47}, {44.929, 282.591}}}]}, {FaceForm[{RGBColor[0.662745, 0.803922, 0.568627], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{355.071, 282.591}, {355.071, 125.47}, {219., 46.9089}, {219., 204.03}, {355.071, 282.591}}}]}, {FaceForm[{RGBColor[0.690196, 0.588235, 0.811765], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{200., 394.061}, {336.071, 315.5}, {200., 236.94}, {63.929, 315.5}, {200., 394.061}}}]}}, BoxID -&gt; System`Convert`CommonDump`ConvertText[{&quot;data&quot;:&quot;{\&quot;jsonData\&quot;:\&quot;{\\\&quot;type\\\&quot;: \\\&quot;Graphics\\\&quot;,\\n\\\&quot;version\\\&quot;: \\\&quot;1.0\\\&quot;,\\n\\\&quot;height\\\&quot;: 11.290277,\\n\\\&quot;width\\\&quot;: 10.000000,\\n\\\&quot;offset\\\&quot;: [-66.000000, -5.000000],\\n\\\&quot;background\\\&quot;:&nbsp;&nbsp;[254.996, 254.996, 254.996, 1],\\n\\\&quot;UserCoords\\\&quot;: [13.467693, 428.589520, 427.983930, -39.410774],\\n\\\&quot;AxesOrigin\\\&quot;: [50.000000, 100.000000],\\n\\\&quot;primitives\\\&quot;: [\\n{\\\&quot;type\\\&quot;: \\\&quot;Clip\\\&quot;, \\\&quot;transform\\\&quot;: [1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000], \\\&quot;path\\\&quot;: [[66,5], [66,17], [76,17], [76,5]]},\\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [245, 129, 50], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [245, 129, 50], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[70.6206,14.7879], [70.6206,10.2175], [71.6102,9.64616], [74.5788,7.93223], [74.5788,12.5027], [70.6206,14.7879], [70.6206,14.7879], [66.4212,7.93223], [69.3898,9.64616], [70.3794,10.2175], [70.3794,14.7879], [66.4212,12.5027], [66.4212,7.93223], [66.4212,7.93223], [70.5,5.4381], [74.4581,7.72332], [71.4895,9.43724], [70.5,10.0086], [69.5105,9.43724], [66.5419,7.72332], [70.5,5.4381], [70.5,5.4381], [74.7597,7.61886], [70.5603,5.19434], [70.537,5.184], [70.5125,5.17883], [70.4875,5.17883], [70.463,5.184], [70.4397,5.19434], [66.2403,7.61886], [66.2197,7.63386], [66.203,7.65252], [66.1905,7.67414], [66.1827,7.69797], [66.18,7.72332], [66.18,12.5723], [66.1827,12.5977], [66.1905,12.6215], [66.203,12.6431], [66.2197,12.6618], [66.2403,12.6768], [70.4397,15.1013], [70.4511,15.1071], [70.463,15.1117], [70.4751,15.1149], [70.4875,15.1168], [70.5,15.1175], [70.5125,15.1168], [70.5249,15.1149], [70.537,15.1117], [70.5489,15.1071], [70.5603,15.1013], [74.7597,12.6768], [74.7803,12.6618], [74.797,12.6431], [74.8095,12.6215], [74.8173,12.5977], [74.82,12.5723], [74.82,7.72332], [74.8173,7.69797], [74.8095,7.67414], [74.797,7.65252], [74.7803,7.63386], [74.7597,7.61886], [74.7597,7.61886], [74.7597,7.61886], [70.5,5.4381], [66.4212,7.93223]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [141, 172, 207], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [141, 172, 207], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[66.759,8.52215], [70.0416,10.4174], [70.0416,14.2079], [66.759,12.3126], [66.759,8.52215], [66.759,8.52215]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [169, 205, 145], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [169, 205, 145], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[74.241,8.52215], [74.241,12.3126], [70.9584,14.2079], [70.9584,10.4174], [74.241,8.52215], [74.241,8.52215]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [176, 150, 207], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [176, 150, 207], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[70.5,5.83299], [73.7826,7.72824], [70.5,9.62346], [67.2174,7.72824], [70.5,5.83299], [70.5,5.83299]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Group\\\&quot;, \\\&quot;name\\\&quot;: \\\&quot;Frame\\\&quot;,\\n\\\&quot;metadata\\\&quot;: {\\\&quot;left\\\&quot;: 13.4677, \\\&quot;top\\\&quot;: 428.59, \\\&quot;right\\\&quot;: 386.532, \\\&quot;bottom\\\&quot;: 2.04085},\\n\\\&quot;primitives\\\&quot;:[]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Group\\\&quot;, \\\&quot;name\\\&quot;: \\\&quot;Axes\\\&quot;,\\n\\\&quot;metadata\\\&quot;: \\\&quot;TBD\\\&quot;,\\n\\\&quot;primitives\\\&quot;:[]}],\\n\\\&quot;PlotRange\\\&quot;: {\\\&quot;left\\\&quot;: 0.000000, \\\&quot;top\\\&quot;: -9.596735, \\\&quot;right\\\&quot;: 9.000000, \\\&quot;bottom\\\&quot;: 0.693541}\\n}\\n\&quot;,\&quot;requestedImageSize\&quot;:10}&quot;}, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], BaselinePosition -&gt; Scaled[0.15], ImageSize -&gt; 10]], ItemBox[StyleBox[RowBox[{System`Convert`CommonDump`ConvertText[QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[ , System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], ShowAutoStyles -&gt; False, ShowStringCharacters -&gt; False, FontSize -&gt; 0.9 Inherited, FontColor -&gt; GrayLevel[0.1]]]}}, GridBoxSpacings -&gt; {System`Convert`CommonDump`ConvertText[Columns, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; {{0.25}}}], Alignment -&gt; {Left, Baseline}, BaseStyle -&gt; {LineSpacing -&gt; {0, 0}, LineBreakWithin -&gt; False}, BaselinePosition -&gt; Baseline, FrameMargins -&gt; {{3, 0}, {0, 0}}], RowBox[{System`Convert`CommonDump`ConvertText[PacletSymbol, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[[, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], RowBox[{System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[,, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], System`Convert`CommonDump`ConvertText[], System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], TooltipStyle -&gt; {ShowAutoStyles -&gt; True, ShowStringCharacters -&gt; True}], Annotation[#1, Defer[PacletSymbol[System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]]], System`Convert`CommonDump`ConvertText[Tooltip, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]] &amp; ], Background -&gt; RGBColor[0.968, 0.976, 0.984], BaselinePosition -&gt; Baseline, DefaultBaseStyle -&gt; {}, FrameMargins -&gt; {{0, 0}, {1, 1}}, FrameStyle -&gt; RGBColor[0.831, 0.847, 0.85], RoundingRadius -&gt; 4], PacletSymbol[System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]], TaggingRules -&gt; {System`Convert`CommonDump`ConvertText[Paclet, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Symbol, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}, BoxID -&gt; System`Convert`CommonDump`ConvertText[PacletSymbolBox, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], SelectWithContents -&gt; True, Selectable -&gt; False], /@, {ZZZZZZZ}}], ,, shots}], ]}], ]}], [, [1], ]}], &amp;amp;}], /@, Hxx}]}], ;}], , RowBox[{RowBox[{resz, =, RowBox[{RowBox[{RowBox[{RowBox[{Values, [, RowBox[{QuantumMeasurementSimulation, [, RowBox[{#, ,, RowBox[{InterpretationBox[FrameBox[TagBox[TooltipBox[PaneBox[GridBox[{{ItemBox[GraphicsBox[{Thickness[0.0025], {FaceForm[{RGBColor[0.960784, 0.505882, 0.196078], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}, {{0, 2, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}, {0, 1, 0}, {1, 3, 3}}}, {{{205., 22.8637}, {205., 212.317}, {246.018, 235.999}, {369.071, 307.044}, {369.071, 117.591}, {205., 22.8637}}, {{30.929, 307.044}, {153.982, 235.999}, {195., 212.317}, {195., 22.8637}, {30.929, 117.591}, {30.929, 307.044}}, {{200., 410.43}, {364.071, 315.704}, {241.018, 244.659}, {200., 220.977}, {158.982, 244.659}, {35.929, 315.704}, {200., 410.43}}, {{376.571, 320.034}, {202.5, 420.534}, {200.953, 421.427}, {199.047, 421.427}, {197.5, 420.534}, {23.429, 320.034}, {21.882, 319.141}, {20.929, 317.49}, {20.929, 315.704}, {20.929, 114.704}, {20.929, 112.918}, {21.882, 111.267}, {23.429, 110.374}, {197.5, 9.87369}, {198.273, 9.42669}, {199.137, 9.20369}, {200., 9.20369}, {200.863, 9.20369}, {201.727, 9.42669}, {202.5, 9.87369}, {376.571, 110.374}, {378.118, 111.267}, {379.071, 112.918}, {379.071, 114.704}, {379.071, 315.704}, {379.071, 317.49}, {378.118, 319.141}, {376.571, 320.034}}}]}, {FaceForm[{RGBColor[0.552941, 0.67451, 0.811765], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{44.929, 282.591}, {181., 204.03}, {181., 46.9089}, {44.929, 125.47}, {44.929, 282.591}}}]}, {FaceForm[{RGBColor[0.662745, 0.803922, 0.568627], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{355.071, 282.591}, {355.071, 125.47}, {219., 46.9089}, {219., 204.03}, {355.071, 282.591}}}]}, {FaceForm[{RGBColor[0.690196, 0.588235, 0.811765], Opacity[1.]}], FilledCurveBox[{{{0, 2, 0}, {0, 1, 0}, {0, 1, 0}, {0, 1, 0}}}, {{{200., 394.061}, {336.071, 315.5}, {200., 236.94}, {63.929, 315.5}, {200., 394.061}}}]}}, BoxID -&gt; System`Convert`CommonDump`ConvertText[{&quot;data&quot;:&quot;{\&quot;jsonData\&quot;:\&quot;{\\\&quot;type\\\&quot;: \\\&quot;Graphics\\\&quot;,\\n\\\&quot;version\\\&quot;: \\\&quot;1.0\\\&quot;,\\n\\\&quot;height\\\&quot;: 11.290277,\\n\\\&quot;width\\\&quot;: 10.000000,\\n\\\&quot;offset\\\&quot;: [-66.000000, -5.000000],\\n\\\&quot;background\\\&quot;:&nbsp;&nbsp;[254.996, 254.996, 254.996, 1],\\n\\\&quot;UserCoords\\\&quot;: [13.467693, 428.589520, 427.983930, -39.410774],\\n\\\&quot;AxesOrigin\\\&quot;: [50.000000, 100.000000],\\n\\\&quot;primitives\\\&quot;: [\\n{\\\&quot;type\\\&quot;: \\\&quot;Clip\\\&quot;, \\\&quot;transform\\\&quot;: [1.000000, 0.000000, 0.000000, 1.000000, 0.000000, 0.000000], \\\&quot;path\\\&quot;: [[66,5], [66,17], [76,17], [76,5]]},\\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [245, 129, 50], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [245, 129, 50], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[70.6206,14.7879], [70.6206,10.2175], [71.6102,9.64616], [74.5788,7.93223], [74.5788,12.5027], [70.6206,14.7879], [70.6206,14.7879], [66.4212,7.93223], [69.3898,9.64616], [70.3794,10.2175], [70.3794,14.7879], [66.4212,12.5027], [66.4212,7.93223], [66.4212,7.93223], [70.5,5.4381], [74.4581,7.72332], [71.4895,9.43724], [70.5,10.0086], [69.5105,9.43724], [66.5419,7.72332], [70.5,5.4381], [70.5,5.4381], [74.7597,7.61886], [70.5603,5.19434], [70.537,5.184], [70.5125,5.17883], [70.4875,5.17883], [70.463,5.184], [70.4397,5.19434], [66.2403,7.61886], [66.2197,7.63386], [66.203,7.65252], [66.1905,7.67414], [66.1827,7.69797], [66.18,7.72332], [66.18,12.5723], [66.1827,12.5977], [66.1905,12.6215], [66.203,12.6431], [66.2197,12.6618], [66.2403,12.6768], [70.4397,15.1013], [70.4511,15.1071], [70.463,15.1117], [70.4751,15.1149], [70.4875,15.1168], [70.5,15.1175], [70.5125,15.1168], [70.5249,15.1149], [70.537,15.1117], [70.5489,15.1071], [70.5603,15.1013], [74.7597,12.6768], [74.7803,12.6618], [74.797,12.6431], [74.8095,12.6215], [74.8173,12.5977], [74.82,12.5723], [74.82,7.72332], [74.8173,7.69797], [74.8095,7.67414], [74.797,7.65252], [74.7803,7.63386], [74.7597,7.61886], [74.7597,7.61886], [74.7597,7.61886], [70.5,5.4381], [66.4212,7.93223]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [141, 172, 207], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [141, 172, 207], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[66.759,8.52215], [70.0416,10.4174], [70.0416,14.2079], [66.759,12.3126], [66.759,8.52215], [66.759,8.52215]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [169, 205, 145], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [169, 205, 145], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[74.241,8.52215], [74.241,12.3126], [70.9584,14.2079], [70.9584,10.4174], [74.241,8.52215], [74.241,8.52215]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Polygon\\\&quot;, \\\&quot;antialiased\\\&quot; : true, \\\&quot;edgeForm\\\&quot;: {\\\&quot;color\\\&quot;: [176, 150, 207], \\\&quot;opacity\\\&quot;: 1, \\\&quot;thickness\\\&quot;: {}, \\\&quot;capForm\\\&quot;: \\\&quot;Square\\\&quot;, \\\&quot;joinForm\\\&quot;: {\\\&quot;type\\\&quot;: \\\&quot;Miter\\\&quot;, \\\&quot;d\\\&quot;: 3.23931}, \\\&quot;dashing\\\&quot;: [], \\\&quot;dashingOffset\\\&quot;: 0}, \\\&quot;faceForm\\\&quot;: {\\\&quot;color\\\&quot;: [176, 150, 207], \\\&quot;opacity\\\&quot;: 1}, \\\&quot;fillrule\\\&quot; : \\\&quot;EvenOdd\\\&quot; , \\\&quot;points\\\&quot;: [[70.5,5.83299], [73.7826,7.72824], [70.5,9.62346], [67.2174,7.72824], [70.5,5.83299], [70.5,5.83299]]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Group\\\&quot;, \\\&quot;name\\\&quot;: \\\&quot;Frame\\\&quot;,\\n\\\&quot;metadata\\\&quot;: {\\\&quot;left\\\&quot;: 13.4677, \\\&quot;top\\\&quot;: 428.59, \\\&quot;right\\\&quot;: 386.532, \\\&quot;bottom\\\&quot;: 2.04085},\\n\\\&quot;primitives\\\&quot;:[]}, \\n{\\\&quot;type\\\&quot;: \\\&quot;Group\\\&quot;, \\\&quot;name\\\&quot;: \\\&quot;Axes\\\&quot;,\\n\\\&quot;metadata\\\&quot;: \\\&quot;TBD\\\&quot;,\\n\\\&quot;primitives\\\&quot;:[]}],\\n\\\&quot;PlotRange\\\&quot;: {\\\&quot;left\\\&quot;: 0.000000, \\\&quot;top\\\&quot;: -9.596735, \\\&quot;right\\\&quot;: 9.000000, \\\&quot;bottom\\\&quot;: 0.693541}\\n}\\n\&quot;,\&quot;requestedImageSize\&quot;:10}&quot;}, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], BaselinePosition -&gt; Scaled[0.15], ImageSize -&gt; 10]], ItemBox[StyleBox[RowBox[{System`Convert`CommonDump`ConvertText[QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[ , System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], ShowAutoStyles -&gt; False, ShowStringCharacters -&gt; False, FontSize -&gt; 0.9 Inherited, FontColor -&gt; GrayLevel[0.1]]]}}, GridBoxSpacings -&gt; {System`Convert`CommonDump`ConvertText[Columns, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; {{0.25}}}], Alignment -&gt; {Left, Baseline}, BaseStyle -&gt; {LineSpacing -&gt; {0, 0}, LineBreakWithin -&gt; False}, BaselinePosition -&gt; Baseline, FrameMargins -&gt; {{3, 0}, {0, 0}}], RowBox[{System`Convert`CommonDump`ConvertText[PacletSymbol, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[[, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], RowBox[{System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[,, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], System`Convert`CommonDump`ConvertText[], System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}], TooltipStyle -&gt; {ShowAutoStyles -&gt; True, ShowStringCharacters -&gt; True}], Annotation[#1, Defer[PacletSymbol[System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]]], System`Convert`CommonDump`ConvertText[Tooltip, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]] &amp; ], Background -&gt; RGBColor[0.968, 0.976, 0.984], BaselinePosition -&gt; Baseline, DefaultBaseStyle -&gt; {}, FrameMargins -&gt; {{0, 0}, {1, 1}}, FrameStyle -&gt; RGBColor[0.831, 0.847, 0.85], RoundingRadius -&gt; 4], PacletSymbol[System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]], TaggingRules -&gt; {System`Convert`CommonDump`ConvertText[Paclet, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; System`Convert`CommonDump`ConvertText[Wolfram/QuantumFramework, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], System`Convert`CommonDump`ConvertText[Symbol, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}] -&gt; System`Convert`CommonDump`ConvertText[Wolfram`QuantumFramework`QuantumMeasurementOperator, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}]}, BoxID -&gt; System`Convert`CommonDump`ConvertText[PacletSymbolBox, System`Convert`HTMLDump`htmlsave, HTMLEntities -&gt; {HTMLBasic}, AltMathOutput -&gt; PlotLabel, WindowSize -&gt; {2000, Automatic}, MathOutput -&gt; MathML, ConvertClosed -&gt; False, ConvertReverseClosed -&gt; False, ConvertLinkedNotebooks -&gt; False, CharacterEncoding -&gt; Automatic, ConversionStyleEnvironment -&gt; None, ConversionRules -&gt; Automatic, HeadAttributes -&gt; {}, HeadElements -&gt; {}, CSS -&gt; Automatic, ConvertLinkedNotebooks -&gt; False, MathOutput -&gt; GIF, GraphicsOutput -&gt; GIF, Graphics3DOutput -&gt; Automatic, ManipulateOutput -&gt; CDF, ConvertClosed -&gt; True, ConvertReverseClosed -&gt; False, FullDocument -&gt; True, AltMathOutput -&gt; FileName, TableOutput -&gt; {TextForm, Automatic}, AnimationOutput -&gt; Automatic, FilesDirectory -&gt; HTMLFiles, LinksDirectory -&gt; HTMLLinks, HTMLEntities -&gt; {HTML}, AllowBlockMathML -&gt; False, ShowStyles -&gt; True, DataUri -&gt; False, MathMLOptions -&gt; {UseUnicodePlane1Characters -&gt; False, IncludeMarkupAnnotations -&gt; False, Entities -&gt; MathML}], SelectWithContents -&gt; True, Selectable -&gt; False], /@, {ZZZZZZZ}}], ,, shots}], ]}], ]}], [, [1], ]}], &amp;amp;}], /@, Hzz}]}], ;}]}]" width="816" height="73" style="vertical-align:middle;" usemap="#map_8" />
+<map name="map_8">
+<area shape="rect" coords="350,68,552,52" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumMeasurementOperator]]" nohref="" />
+<area shape="rect" coords="350,40,552,23" title="Defer[PacletSymbol[Wolfram/QuantumFramework, Wolfram`QuantumFramework`QuantumMeasurementOperator]]" nohref="" />
+</map>
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_9.gif" alt="xy_gauge_ite_9.gif" width="321" height="37" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <img src="HTMLFiles/xy_gauge_ite_10.gif" alt="xy_gauge_ite_10.gif" width="926" height="159" style="vertical-align:middle" />
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mi>approx</mi>
+  <mtext> </mtext>
+  <mo>=</mo>
+  <mtext> </mtext>
+  <mrow>
+   <mi>Prepend</mi>
+   <mo>[</mo>
+   <mrow>
+    <mrow>
+     <mrow>
+      <mi>Map</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>Fzz</mi>
+       <mo>,</mo>
+       <mi>resz</mi>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+     <mo>+</mo>
+     <mtext> </mtext>
+     <mrow>
+      <mi>Map</mi>
+      <mo>[</mo>
+      <mrow>
+       <mi>Fxx</mi>
+       <mo>,</mo>
+       <mi>resx</mi>
+      </mrow>
+      <mo>]</mo>
+     </mrow>
+    </mrow>
+    <mo>,</mo>
+    <mn>0.</mn>
+   </mrow>
+   <mo>]</mo>
+  </mrow>
+ </mrow>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>0.</mn>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>2323</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>20000</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>4497</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>20000</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>1703</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>5000</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>273</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>625</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>10499</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>20000</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>11893</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>20000</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>13083</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>20000</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>1717</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>2500</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>7021</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>10000</mn>
+    </mfrac>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mfrac>
+     <mrow>
+      <mn>6991</mn>
+      <mo>&InvisibleTimes;</mo>
+      <mi>&pi;</mi>
+     </mrow>
+     <mn>10000</mn>
+    </mfrac>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+<p class="Input">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mi>exact</mi>
+</math>
+</p>
+
+<p class="Output">
+ <math xmlns='http://www.w3.org/1998/Math/MathML'>
+ <mrow>
+  <mo>{</mo>
+  <mrow>
+   <mn>0.</mn>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>0.36672322791519807</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>0.7139884524096517</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.0262592888923243</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.2942745552621497</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.5152569136142304</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.6915089718471321</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.8283984423155726</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>1.932538085412796</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.0105222088056056</mn>
+   </mrow>
+   <mo>,</mo>
+   <mrow>
+    <mo>-</mo>
+    <mn>2.068232351033497</mn>
+   </mrow>
+  </mrow>
+  <mo>}</mo>
+ </mrow>
+</math>
+</p>
+
+
+
+
+<div style="font-family:Helvetica; font-size:11px; width:100%; border:1px none #999999; border-top-style:solid; padding-top:2px; margin-top:20px;">
+ <a href="http://www.wolfram.com/language/" style="color:#000; text-decoration:none;">
+  <span style="color:#555555">Created with the Wolfram Language</span> 
+ </a>
+</div>
+</body>
+
+</html>
