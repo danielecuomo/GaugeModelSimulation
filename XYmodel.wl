@@ -1,7 +1,7 @@
 (* ::Package:: *)
 
 (* ::Input:: *)
-(*Needs["Wolfram`QuantumFramework`"]*)
+Needs["Wolfram`QuantumFramework`"]
 
 
 (* ::Input:: *)
