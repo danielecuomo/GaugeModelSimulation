@@ -1,12 +1,14 @@
 # Quantum simulation in imaginary time for gauge-invariant models
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.1234567.svg)](https://doi.org/10.5281/zenodo.1234567)
 ![Mathematica](https://img.shields.io/badge/Mathematica-14.2-red?logo=wolfram)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-In%20Progress-yellow)
 
+
 This repository contains Wolfram Language code for simulating gauge-invariant models in imaginary time, computing thermal averages.
 
-### How to open the files
+## How to open the files
 
 To explore the code and notebooks:
 
