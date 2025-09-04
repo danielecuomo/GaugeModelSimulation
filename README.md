@@ -14,5 +14,4 @@ To explore the code and notebooks:
 2. Go to File → Open...  
 3. Select the `.wl` file from this repository.  
 
-- `.nb` files open as interactive notebooks with cells, inputs, and outputs.  
 By following this procedure `.wl` files open as notebook.
