@@ -5,3 +5,14 @@
 ![Status](https://img.shields.io/badge/status-In%20Progress-yellow)
 
 This repository contains Wolfram Language code for simulating gauge-invariant models in imaginary time, computing thermal averages.
+
+### 🔹 How to open the files
+
+To explore the code and notebooks:
+
+1. Open notebooks.  
+2. Go to File → Open...  
+3. Select the `.wl` file from this repository.  
+
+- `.nb` files open as interactive notebooks with cells, inputs, and outputs.  
+By following this procedure `.wl` files open as notebook.
