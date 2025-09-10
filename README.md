@@ -2,6 +2,7 @@
 
 [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17060897.svg)](https://doi.org/10.5281/zenodo.17060897)
 ![Mathematica](https://img.shields.io/badge/Mathematica-14.2-red?logo=wolfram)
+![Python](https://img.shields.io/badge/Python-3.11%2B-3776AB?logo=python&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 ![Status](https://img.shields.io/badge/status-In%20Progress-yellow)
 
