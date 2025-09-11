@@ -7,4 +7,4 @@
 ![Status](https://img.shields.io/badge/status-In%20Progress-yellow)
 
 
-This repository contains Wolfram Language code for simulating gauge-invariant models in imaginary time, computing thermal averages.
+This repository contains Wolfram Language code and Jupyter Notebooks for simulating gauge-invariant models in imaginary time, computing thermal averages.
