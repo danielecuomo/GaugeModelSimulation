@@ -10,7 +10,7 @@
 This repository contains Wolfram Language code and Jupyter Notebooks for simulating gauge-invariant models in imaginary time, computing thermal averages.
 
 <p align="center">
-  <img src="https://private-user-images.githubusercontent.com/37900917/513040322-1c8074f2-d876-4e9c-b5d2-c521577dfec1.gif?raw=true"
+  <img src="https://github.com/user-attachments/assets/1c8074f2-d876-4e9c-b5d2-c521577dfec1"
        width="300"
        style="margin: 20px; border-radius: 10px;" />
 </p>
