@@ -19,12 +19,3 @@ This repository contains Wolfram Language code and Jupyter Notebooks for simulat
        width="500"
        />
 </p>
-
-# Unified quantum simulation in imaginary time for transverse field Ising model (TFIM) and XY model
-
-In addition to the original TFIM and XY notebooks ('TFImodel**.ipynb, XYmodel**.ipynb'), this repository includes a **unified python notebook**
-that runs the same ITE simulation framework for both models.
-
-# Notebook 
-
-- **Filename:** 'TFIM_XY_generalized.ipynb'
