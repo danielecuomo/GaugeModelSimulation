@@ -24,7 +24,7 @@ energy (from diagonalization of the stored Hamiltonian operator).
 ```python
 from gauge_simulation import models
 
-H = models.build_hamiltonian("tfim", [1,3])
+H = models.build_hamiltonian(model = "tfim", size = [1,3])
 
 apx = H.approx_ground_state()     # circuit-based approximation
 ext = H.exact_ground_state()      # exact diagonalization
