@@ -36,3 +36,6 @@ print("Exact ground:",        ext)
 ```text
 Approximated ground: -2.522029838042481
 Exact ground:        -2.744149144505002
+```
+
+The bond parameters are currently set to π/4.
