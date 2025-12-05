@@ -11,7 +11,7 @@ This repository contains Wolfram Language code and Jupyter Notebooks for simulat
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e4a8e1ce-cea8-42ba-a1a2-1c562cac03f4"
-       width="500"
+       width="400"
        />
 </p>
 
@@ -31,3 +31,7 @@ ext = H.exact_ground_state()      # exact diagonalization
 
 print("Approximated ground:", apx)
 print("Exact ground:",        ext)
+
+```text
+Approximated ground: -2.522029838042481
+Exact ground:        -2.744149144505002
