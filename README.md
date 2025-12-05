@@ -31,6 +31,7 @@ ext = H.exact_ground_state()      # exact diagonalization
 
 print("Approximated ground:", apx)
 print("Exact ground:",        ext)
+```
 
 ```text
 Approximated ground: -2.522029838042481
