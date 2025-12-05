@@ -14,3 +14,20 @@ This repository contains Wolfram Language code and Jupyter Notebooks for simulat
        width="500"
        />
 </p>
+
+### Ground–State Evaluation
+
+The package allows you to obtain both the **approximate** ground–state energy
+(from the circuit-based imaginary–time method) and the **exact** ground–state
+energy (from diagonalization of the stored Hamiltonian operator).
+
+```python
+from gauge_simulation import models
+
+H = models.build_hamiltonian("tfim", (1,3))
+
+apx = H.approx_ground_state()     # circuit-based approximation
+ext = H.exact_ground_state()      # exact diagonalization
+
+print("Approximated ground:", apx)
+print("Exact ground:",        ext)
