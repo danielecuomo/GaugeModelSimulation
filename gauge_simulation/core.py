@@ -9,37 +9,45 @@ from qiskit.circuit.library import PauliEvolutionGate
 from qiskit.circuit import Parameter
 
 
-def get_nearest_neighbor_interactions(dimension: int, num_qubits: int) -> list[tuple[int, int]]:
+def get_nearest_neighbor_interactions(lattice_size: list[int]) -> list[tuple[int, int]]:
     """
-    Generate nearest-neighbor interaction pairs for any 1D or 2D spin model.
+    Generate nearest-neighbor interactions pairs for 1D chains or 2D rectangular lattices.
 
     Args:
-        dimension (int): 1 or 2 (dimension of the model).
-        num_qubits (int): Total number of qubits. For 2D, must be a perfect square.
+        lattice_size (list[int]): A list containing [rows, cols]. 
+                                  Example: [1, 5] or [5,1] for 1D, [4, 5] for 2D.
 
     Returns:
-        list[tuple[int,int]]: list of (i,j) index pairs for nearest-neighbor couplings
+        list[tuple[int,int]]: list of (i,j) index pairs for nearest-neighbor couplings.
     """
-    if dimension == 1:
-        # Linear 1D chain, extreme ends not connected
+    # Validate input
+    if not (isinstance(lattice_size, list) and len(lattice_size) == 2):
+        raise ValueError("lattice_size must be a list of two integers [rows, cols].")
+    
+    rows, cols = lattice_size
+
+    if not (isinstance(rows, int) and isinstance(cols, int) and rows > 0 and cols > 0):
+        raise ValueError("Both rows and cols must be positive integers.")
+
+    num_qubits = rows * cols
+    interactions = []
+
+    # Get dimension and calculate interactions
+    # Check for 1D (linear chain)
+    if rows == 1 or cols == 1:
+        
         interactions = [(i, i + 1) for i in range(num_qubits - 1)]
 
-    elif dimension == 2:
-        # Square 2D lattice
-        L = int(np.sqrt(num_qubits))
-        if L * L != num_qubits:
-            raise ValueError("Number of qubits must form a perfect square lattice.")
-        interactions = []
-        for i in range(num_qubits):
-            # Right neighbor
-            if (i + 1) % L != 0:
-                interactions.append((i, i + 1))
-            # Down neighbor
-            if i + L < num_qubits:
-                interactions.append((i, i + L))
-
+    # Check for 2D (full rectangular lattice)
     else:
-        raise ValueError("Only 1D and 2D xy models are supported.")
+        for i in range(num_qubits):
+            # right neighbor 
+            if (i + 1) % cols != 0:
+                interactions.append((i, i + 1))
+
+            # down neighbor
+            if i + cols < num_qubits:
+                interactions.append((i, i + cols))
 
     return interactions
 
@@ -61,20 +69,22 @@ def kron_matrices(pauli_string: str, pauli_dict: dict) -> np.ndarray:
     return result
 
 
-def thermal_average_H(beta: float, lambda_n: np.ndarray) -> float:
+def thermal_average_H_H2(beta: float, lambda_n: np.ndarray) -> tuple[float, float]:
     """
-    Calculate the thermal average of the Hamiltonian at a given beta.
+    Calculate the thermal average of the Hamiltonian, and its square at a given beta.
 
     Args:
         beta (float): Inverse temperature.
         lambda_n (np.ndarray): Eigenvalues of the Hamiltonian.
 
     Returns:
-        float: Thermal average.
+        float: Thermal average <H>.
     """
     w = np.exp(-beta * lambda_n)
     Z_f = np.sum(w)
-    return float(np.sum(w * lambda_n) / Z_f)
+    H = float(np.sum(w * lambda_n) / Z_f)
+    H2 = float(np.sum(w * lambda_n**2) / Z_f)
+    return H, H2
 
 
 def exp_func(beta: np.ndarray | float, a: float, b: float, c: float) -> np.ndarray | float:
@@ -93,184 +103,238 @@ def exp_func(beta: np.ndarray | float, a: float, b: float, c: float) -> np.ndarr
     return a * np.exp(-beta * b) + c
 
 
-def tfim_generalized(dimension: int, num_qubits: int, trotter_steps: int) -> dict:
+def tfim_generalized(lattice_size: list[int], trotter_steps: int) -> dict:
     """
-    Cuomo's gauge-invariant ITE for a transverse field Ising model in 1D or 2D.:contentReference[oaicite:1]{index=1}
+    Implements Cuomo's guage-invarinat ITE for a transverse field Ising model in 1D or 2D.
+
+    Args:
+        lattice_size (list[int]): A list containing [rows, cols]. 
+                                  Example: [1, 5] or [5,1] for 1D, [4, 5] for 2D.
+        trotter_steps (int): Total number of Trotter steps to use in the circuit.
+
+    Returns:
+        dict: Dictionary containing the quantum circuit, results, and other computed values.
+
+    Raises:
+        ValueError: If lattice_size is not a list of two integers,
+                    or if the total number of qubits exceeds 20 (to avoid high memory usage).
     """
-    zz_interaction_list = get_nearest_neighbor_interactions(dimension, num_qubits)
+    if not (isinstance(lattice_size, list) and len(lattice_size) == 2):
+        raise ValueError("lattice_size must be a list of two integers [rows, cols].")
+    
+    rows, cols = lattice_size
 
-    if dimension == 2:
-        L = int(np.sqrt(num_qubits))
-        if L * L != num_qubits:
-            raise ValueError("Number of qubits must form a perfect square lattice for 2D.")
-        total_num_qubits = (5 * num_qubits) - 2 * L
-    else:  # dimension == 1
-        total_num_qubits = (4 * num_qubits) - 1
+    if not (isinstance(rows, int) and isinstance(cols, int) and rows > 0 and cols > 0):
+        raise ValueError("Both rows and cols must be positive integers.")
+    
+    num_qubits = rows * cols
 
+    if rows == 1 or cols == 1:
+        dimension = 1
+    else:
+        dimension = 2
+
+    zz_interaction_list = get_nearest_neighbor_interactions(lattice_size)
+    total_hamiltonian_terms = num_qubits + len(zz_interaction_list)
+    total_num_qubits = 2*num_qubits + total_hamiltonian_terms
+
+    # Check for simulation feasibility; good when running on a low-end to mid-range PC
     if total_num_qubits > 20:
         raise ValueError(
             f"Total qubits required ({total_num_qubits}) exceeds 20. "
-            "Simulation may require excessive memory. "
-            "Consider reducing num_qubits or trotter_steps."
+            "Simulation may require excessive memory. Consider reducing num_qubits or trotter_steps."
         )
 
-    γ = Parameter("γ")
-    η = Parameter("η")
-    β = Parameter("β")
-    X = SparsePauliOp("X")
-    Z = SparsePauliOp("Z")
+    # Define parameters and PauliEvolutionGates
+    γ = Parameter('γ')
+    η = Parameter('η')
+    β = Parameter('β')
+    X = SparsePauliOp('X')
+    Z = SparsePauliOp('Z')
     ZZZ = PauliEvolutionGate(Z ^ Z ^ Z, time=(β / (2 * trotter_steps)) * γ)
     ZX = PauliEvolutionGate(Z ^ X, time=(β / (2 * trotter_steps)) * η)
 
+    # Create quantum circuit
     tfim_qc_sym = QuantumCircuit(total_num_qubits)
 
-    # maximally mixed state for system qubits
+    # Create maximally mixed state for system qubits
     for ind in range(num_qubits):
         tfim_qc_sym.h(ind)
-        tfim_qc_sym.cx(ind, total_num_qubits - 1 - ind)
+        tfim_qc_sym.cx(ind, total_num_qubits - 1 - ind)  
     tfim_qc_sym.barrier()
 
-    # auxiliary qubits in |+>
+    # Prepare auxiliary qubits in |+> state
     aux_start = num_qubits
     aux_end = total_num_qubits - num_qubits
     for ind in range(aux_start, aux_end):
         tfim_qc_sym.h(ind)
     tfim_qc_sym.barrier()
 
-    # Trotter steps
+    # Apply evolution gates in Trotter steps
     for _ in range(trotter_steps):
-        # ZZZ
+        # ZZZ operations
         for ind, zz_interaction in enumerate(zz_interaction_list):
             tfim_qc_sym.append(ZZZ, [zz_interaction[0], zz_interaction[1], num_qubits + ind])
         tfim_qc_sym.barrier()
 
-        # ZX
+        # ZX operations
         for ind in range(num_qubits):
             tfim_qc_sym.append(ZX, [ind, num_qubits + len(zz_interaction_list) + ind])
         tfim_qc_sym.barrier()
 
-    # rotate auxiliary qubits
+    # Rotate auxiliary qubits to the measurement basis
     for ind in range(aux_start, aux_end):
         tfim_qc_sym.sx(ind)
 
-    # build circuit Hamiltonian Pauli strings
+    # Build circuit Hamiltonians for SparsePauliOp
     ZZZ_list = []
     ZX_list = []
     for ind, zz_interaction in enumerate(zz_interaction_list):
-        h_term = list("I" * total_num_qubits)
-        h_term[zz_interaction[0]] = "Z"
-        h_term[zz_interaction[1]] = "Z"
-        h_term[num_qubits + ind] = "Z"
-        ZZZ_list.append("".join(h_term)[::-1])
+        h_term = list('I' * total_num_qubits)
+        h_term[zz_interaction[0]], h_term[zz_interaction[1]], h_term[num_qubits + ind] = 'Z', 'Z', 'Z'
+        ZZZ_list.append(''.join(h_term)[::-1])
 
     for ind in range(num_qubits):
-        h_term = list("I" * total_num_qubits)
-        h_term[ind] = "X"
-        h_term[num_qubits + len(zz_interaction_list) + ind] = "Z"
-        ZX_list.append("".join(h_term)[::-1])
+        h_term = list('I' * total_num_qubits)
+        h_term[ind], h_term[num_qubits + len(zz_interaction_list) + ind] = 'X', 'Z'
+        ZX_list.append(''.join(h_term)[::-1])
 
     hamiltonian_terms = ZZZ_list + ZX_list
     hamiltonian_terms_coeff = [γ] * len(ZZZ_list) + [η] * len(ZX_list)
 
+    # Build and parameterize Hamiltonian
     tfim_hamiltonian = SparsePauliOp(hamiltonian_terms, coeffs=hamiltonian_terms_coeff)
-    tfim_hamiltonian = tfim_hamiltonian.assign_parameters({γ: pi / 4, η: pi / 4})
-    tfim_hamiltonian = SparsePauliOp(
-        tfim_hamiltonian.paulis,
-        coeffs=np.asarray(tfim_hamiltonian.coeffs, dtype=np.complex128),
-    )
+    tfim_hamiltonian = tfim_hamiltonian.assign_parameters({γ: pi / 4, η: pi / 4}) # using a fixed-value pi/4 for the params 
 
-    return {
-        "qc": tfim_qc_sym,
-        "hamiltonian": tfim_hamiltonian,
-        "hamiltonian_terms_0": ZZZ_list,
-        "hamiltonian_terms_1": ZX_list,
-        "total_num_qubits": total_num_qubits,
-        "gamma_param": γ,
-        "eta_param": η,
-        "beta_param": β,
+    # qiskit needs complex-typed coefficients for tfim_hamiltonian
+    # only 'SparsePauliOp' with complex-typed coefficients can be converted to 'SparseObservable'
+    tfim_hamiltonian = SparsePauliOp(tfim_hamiltonian.paulis, coeffs=np.asarray(tfim_hamiltonian.coeffs, dtype=np.complex128))
+    tfim_hamiltonian_sq = (tfim_hamiltonian @ tfim_hamiltonian).simplify() # gets the SparsePauliOp of the square
+
+    tfim_output = {
+        'qc': tfim_qc_sym, 'hamiltonian': tfim_hamiltonian, 'hamiltonian_sq': tfim_hamiltonian_sq,
+        'hamiltonian_terms_0': ZZZ_list, 'hamiltonian_terms_1': ZX_list,
+        'total_num_qubits': total_num_qubits,
+        'gamma_param': γ,
+        'eta_param': η,
+        'beta_param': β
     }
 
+    return tfim_output
 
-def xy_generalized(dimension: int, num_qubits: int, trotter_steps: int) -> dict:
+def xy_generalized(lattice_size: list[int], trotter_steps: int) -> dict:
     """
-    Cuomo's gauge-invariant ITE for an XY model in 1D or 2D.:contentReference[oaicite:2]{index=2}
+    Implements Cuomo's guage-invarinat ITE for an XY model in 1D or 2D.
+
+    Args:
+        lattice_size (list[int]): A list containing [rows, cols]. 
+                                  Example: [1, 5] or [5,1] for 1D, [4, 5] for 2D.
+        trotter_steps (int): Total number of Trotter steps to use in the circuit.
+
+    Returns:
+        dict: Dictionary containing the quantum circuit, results, and other computed values.
+
+    Raises:
+        ValueError: If lattice_size is not a list of two integers,
+                    or if the total number of qubits exceeds 20 (to avoid high memory usage).
     """
-    interaction_list = get_nearest_neighbor_interactions(dimension, num_qubits)
 
-    if dimension == 2:
-        L = int(np.sqrt(num_qubits))
-        if L * L != num_qubits:
-            raise ValueError("Number of qubits must form a perfect square lattice for 2D.")
-        total_num_qubits = (6 * num_qubits) - 4 * L
-    else:  # dimension == 1
-        total_num_qubits = (4 * num_qubits) - 2
+    if not (isinstance(lattice_size, list) and len(lattice_size) == 2):
+        raise ValueError("lattice_size must be a list of two integers [rows, cols].")
+    
+    rows, cols = lattice_size
 
+    if not (isinstance(rows, int) and isinstance(cols, int) and rows > 0 and cols > 0):
+        raise ValueError("Both rows and cols must be positive integers.")
+    
+    num_qubits = rows * cols
+
+    if rows == 1 or cols == 1:
+        dimension = 1
+    else:
+        dimension = 2
+
+    interaction_list = get_nearest_neighbor_interactions(lattice_size)
+    total_hamiltonian_terms = 2 * len(interaction_list)
+    total_num_qubits = 2*num_qubits + total_hamiltonian_terms
+
+    # Check for simulation feasibility
     if total_num_qubits > 20:
         raise ValueError(
             f"Total qubits required ({total_num_qubits}) exceeds 20. "
-            "Simulation may require excessive memory. "
-            "Consider reducing num_qubits or trotter_steps."
+            "Simulation may require excessive memory. Consider reducing num_qubits or trotter_steps."
         )
 
-    γ = Parameter("γ")
-    β = Parameter("β")
-    X = SparsePauliOp("X")
-    Z = SparsePauliOp("Z")
+    # Define parameters and PauliEvolutionGates
+    γ = Parameter('γ') # we are taking all the coefficients to be equal and == pi/4
+    β = Parameter('β')
+    X = SparsePauliOp('X')
+    Z = SparsePauliOp('Z')
     ZZZ = PauliEvolutionGate(Z ^ Z ^ Z, time=(β / (2 * trotter_steps)) * γ)
     ZXX = PauliEvolutionGate(Z ^ X ^ X, time=(β / (2 * trotter_steps)) * γ)
 
+    # Create quantum circuit
     xy_qc_sym = QuantumCircuit(total_num_qubits)
 
-    # maximally mixed state for system qubits
+    # Create maximally mixed state for system qubits
     for ind in range(num_qubits):
         xy_qc_sym.h(ind)
-        xy_qc_sym.cx(ind, total_num_qubits - 1 - ind)
+        xy_qc_sym.cx(ind, total_num_qubits - 1 - ind)  
     xy_qc_sym.barrier()
 
-    # auxiliary qubits in |+>
+    # Prepare auxiliary qubits in |+> state
     aux_start = num_qubits
     aux_end = total_num_qubits - num_qubits
     for ind in range(aux_start, aux_end):
         xy_qc_sym.h(ind)
     xy_qc_sym.barrier()
 
-    # Trotter steps
+    # Apply evolution gates in Trotter steps
     for _ in range(trotter_steps):
         for ind, interaction in enumerate(interaction_list):
             xy_qc_sym.append(ZZZ, [interaction[0], interaction[1], num_qubits + ind])
             xy_qc_sym.append(ZXX, [interaction[0], interaction[1], num_qubits + ind + len(interaction_list)])
+
         xy_qc_sym.barrier()
 
-    # rotate auxiliary qubits
+    # Rotate auxiliary qubits to the measurement basis
     for ind in range(aux_start, aux_end):
         xy_qc_sym.sx(ind)
 
-    # build circuit Hamiltonian Pauli strings
+    # Build circuit Hamiltonians for SparsePauliOp
     ZZZ_list = []
     ZXX_list = []
     for ind, interaction in enumerate(interaction_list):
-        h_term = list("I" * total_num_qubits)
-        h_term[interaction[0]] = "Z"
-        h_term[interaction[1]] = "Z"
-        h_term[num_qubits + ind] = "Z"
-        ZZZ_list.append("".join(h_term)[::-1])
+        h_term = list('I' * total_num_qubits)
+        h_term[interaction[0]], h_term[interaction[1]], h_term[num_qubits + ind] = 'Z', 'Z', 'Z'
+        ZZZ_list.append(''.join(h_term)[::-1])
 
     for ind, interaction in enumerate(interaction_list):
-        h_term = list("I" * total_num_qubits)
-        h_term[interaction[0]] = "X"
-        h_term[interaction[1]] = "X"
-        h_term[num_qubits + ind + len(interaction_list)] = "Z"
-        ZXX_list.append("".join(h_term)[::-1])
+        h_term = list('I' * total_num_qubits)
+        h_term[interaction[0]], h_term[interaction[1]], h_term[num_qubits + ind + len(interaction_list)]  = 'X', 'X', 'Z'
+        ZZZ_list.append(''.join(h_term)[::-1])
 
     hamiltonian_terms = ZZZ_list + ZXX_list
     hamiltonian_terms_coeff = [γ] * len(hamiltonian_terms)
 
+    # Build and parameterize Hamiltonian
     xy_hamiltonian = SparsePauliOp(hamiltonian_terms, coeffs=hamiltonian_terms_coeff)
     xy_hamiltonian = xy_hamiltonian.assign_parameters({γ: pi / 4})
-    xy_hamiltonian = SparsePauliOp(
-        xy_hamiltonian.paulis,
-        coeffs=np.asarray(xy_hamiltonian.coeffs, dtype=np.complex128),
-    )
 
-    return {
-        "qc": xy_qc_sym,
+    # qiskit needs complex-typed coefficients for xy_hamiltonian
+    # only 'SparsePauliOp' with complex-typed coefficients can be converted to 'SparseObservable'
+    xy_hamiltonian = SparsePauliOp(xy_hamiltonian.paulis, coeffs=np.asarray(xy_hamiltonian.coeffs, dtype=np.complex128))
+    xy_hamiltonian_sq = (xy_hamiltonian @ xy_hamiltonian).simplify() # gets the SparsePauliOp of the square
+
+
+    xy_output = {
+        'qc': xy_qc_sym, 'hamiltonian': xy_hamiltonian, 'hamiltonian_sq': xy_hamiltonian_sq,
+        'hamiltonian_terms_0': ZZZ_list, 'hamiltonian_terms_1': ZXX_list,
+        'total_num_qubits': total_num_qubits,
+        'gamma_param': γ,
+        'beta_param': β
+    }
+
+
+    return xy_output
+
