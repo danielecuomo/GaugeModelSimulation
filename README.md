@@ -26,7 +26,6 @@ import numpy as np
 from gauge_simulation import models
 from gauge_simulation import plotting
 
-
 # User input and changes: 
 model = "tfim" # or "xy"
 lattice_size = [2, 2]
@@ -52,7 +51,7 @@ approx_groundstate = sim_results['thermal_avgs'][-1]
 print(f"Exact Ground State Energy (E_min):      {exact_groundstate:.4f}")
 print(f"Exact <H>:                              {exact_results['thermal_avgs'][-1]:.4f}")
 print(f"Simulated <H>:                          {sim_results['thermal_avgs'][-1]:.4f} \n"
-      f"Result variance:                        {sim_results['variance'][-1]:.4f}"
+      f"Simulation variance:                        {sim_results['variance'][-1]:.4f}"
       )
 
 # Circuit plotting
@@ -78,7 +77,7 @@ plot_filename = plotting.plot_simulation_results(
 Exact Ground State Energy (E_min):      -4.1047
 Exact <H>:                              -3.8079
 Simulated <H>:                          -3.7006 
-Result variance:                        0.7475
+Simulation variance:                        0.7475
 ```
 
 The bond parameters are currently set to π/4.
