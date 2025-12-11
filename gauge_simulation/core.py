@@ -53,17 +53,21 @@ def get_nearest_neighbor_interactions(lattice_size: list[int]) -> list[tuple[int
     return interactions
 
 
-def kron_matrices(pauli_string: str, pauli_dict: dict) -> np.ndarray:
+def kron_matrices(pauli_string: str) -> np.ndarray:
     """
     Compute the Kronecker product for a given Pauli string.
 
     Args:
         pauli_string (str): String representing the Pauli operators (e.g., 'ZZX').
-        pauli_dict (dict): Dictionary mapping Pauli labels to their matrix representations.
 
     Returns:
         np.ndarray: The resulting matrix from the Kronecker product.
     """
+    I_g = np.array([[1, 0], [0, 1]], dtype=complex)
+    X_g = np.array([[0, 1], [1, 0]], dtype=complex)
+    Z_g = np.array([[1, 0], [0, -1]], dtype=complex)
+    pauli_dict = {'I': I_g, 'X': X_g, 'Z': Z_g}
+
     result = pauli_dict[pauli_string[0]]
     for char in pauli_string[1:]:
         result = np.kron(result, pauli_dict[char])
@@ -384,4 +388,3 @@ def xy_generalized(lattice_size: list[int], trotter_steps: int) -> dict:
 
 
     return xy_output
-
