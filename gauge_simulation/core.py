@@ -2,6 +2,7 @@
 
 import numpy as np
 from numpy import pi
+from scipy.integrate import cumulative_trapezoid
 
 from qiskit import QuantumCircuit
 from qiskit.quantum_info import SparsePauliOp
@@ -101,6 +102,52 @@ def exp_func(beta: np.ndarray | float, a: float, b: float, c: float) -> np.ndarr
         np.ndarray | float: Function value(s).
     """
     return a * np.exp(-beta * b) + c
+
+
+def compute_free_energy_and_entropy(beta: np.ndarray, thermal_H: np.ndarray) -> tuple[np.ndarray, np.ndarray, np.ndarray]:
+    """
+    Compute the 'constant-free' free energy and entropy from thermal averages.
+
+    Definitions used:
+        F_tilde(β) = ( 1 / β ) * ∫_{β0}^{β} <H>(β') dβ'
+        S_tilde(β) = β * ( <H>(β) - F_tilde(β) )
+
+    These omit the additive constant A/β that would normally appear in the
+    true free energy. This is intentional since both simulated and exact
+    results are compared without the constant.
+
+    Parameters
+    ----------
+    beta : np.ndarray
+        1D array of β values (inverse temperature).
+        Must be strictly increasing and beta[0] > 0.
+
+    H_expect : np.ndarray
+        1D array of thermal expectation values <H>(β).
+        Must be the same shape as beta.
+
+    Returns
+    -------
+    F_tilde : np.ndarray
+        The constant-free free energy evaluated at each β.
+
+    S_tilde : np.ndarray
+        The constant-free entropy evaluated at each β.
+
+    Notes
+    -----
+    - No constant term is added.
+    - βeta = 0 is not supported (division by zero).
+    - βeta must be sorted to exclude beta = 0.
+    """
+    beta_tilde = beta[1:]
+    thermal_H_tilde = thermal_H[1:]
+
+    F_tilde = 1/beta_tilde * (cumulative_trapezoid(thermal_H_tilde, beta_tilde, initial=0.0))
+
+    S_tilde = beta_tilde * (thermal_H_tilde - F_tilde)
+
+    return F_tilde, S_tilde
 
 
 def tfim_generalized(lattice_size: list[int], trotter_steps: int) -> dict:
