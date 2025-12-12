@@ -22,20 +22,16 @@ The package allows you to obtain both the **approximate** ground–state energy
 energy (from diagonalization of the stored Hamiltonian operator).
 
 ```python
-import numpy as np
 from gauge_simulation import models
-
-betas = 
 
 H = models.build_hamiltonian(model = "tfim", size = [2,2])
 
 ext = H.exact_ground_state()
 
-# Run the full simulation across the range of $\beta$ values
-sim = H.run_simulation(np.linspace(0.0, 1.4, 11))
+apx = H.run_simulation(1.4)
 
 print(f"Ground State Energy:  {ext:.4f}")
-print(f"Approximated:  {sim['thermal_avgs'][-1]:.4f}")
+print(f"Approximated:  {apx:.4f}")
 ```
 
 ```text
