@@ -1,6 +1,7 @@
 # gauge_simulation/__init__.py
 
-from .hamiltonian import Hamiltonian
-from . import initialization
+from .hamiltonian import GaugeModel
+from . import models
+from . import plotting
 
-__all__ = ["Hamiltonian", "initialization"]
+__all__ = ["GaugeModel", "models", "plotting"]
