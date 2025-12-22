@@ -19,24 +19,25 @@ This repository contains Wolfram Language code and Jupyter Notebooks for simulat
 
 The package allows you to obtain both the **approximate** ground–state energy
 (from the circuit-based imaginary–time method) and the **exact** ground–state
-energy (from diagonalization of the stored Hamiltonian operator).
+energy (from diagonalization of the stored Hamiltonian operator). 
+Check `gauge_simulation_run.py` for other accessible quantities.
 
 ```python
 from gauge_simulation import models
 
 H = models.build_hamiltonian(model = "tfim", size = [2,2])
 
-ext = H.exact_ground_state()
+exact_groundstate = H.exact_ground_state()
 
-apx = H.run_simulation(1.4)
+approx_groundstate = H.approximate_ground_state()
 
-print(f"Ground State Energy:  {ext:.4f}")
-print(f"Approximated:  {apx:.4f}")
+print(f"Ground State Energy:  {exact_groundstate:.4f}")
+print(f"Approximated:         {approx_groundstate:.4f}")
 ```
 
 ```text
 Ground State Energy:  -4.1047
-Approximated:  -3.7006 
+Approximated:         -3.7006 
 ```
 
 The bond parameters are currently set to π/4.
