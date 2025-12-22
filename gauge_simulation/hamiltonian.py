@@ -3,6 +3,7 @@
 from __future__ import annotations
 
 import numpy as np
+import math
 from numpy import pi
 import matplotlib.pyplot as plt
 from scipy.optimize import curve_fit
@@ -240,7 +241,7 @@ class GaugeModel:
             sim_entropy = np.array([])
         
         # Get curve fitting for $\langle H \rangle$
-        if len(final_betas) > 0:
+        if len(final_betas) > 1:
             fit_sim_params, _ = curve_fit(exp_func, final_betas, estimated_thermal_avgs, p0=[1, 1, 0])
             fitted_estimated_avgs = exp_func(final_betas, *fit_sim_params)
         else:
@@ -257,6 +258,29 @@ class GaugeModel:
             'entropy_betas': final_betas[1:],
             'quantum_circuit': self.qc,
         }
+    
+    # ---------- Get Approximate Average ----------
+    def approximate_thermal_average(self, beta: float) -> float:
+        """
+        Computes the simulated thermal average <H> for a given beta.
+        If beta is infinity, it automatically uses the optimal simulation 
+        beta value (1.4) to approximate the ground state.
+        """
+
+        effective_beta = 1.4 if math.isinf(beta) or beta > 1.4 else beta
+        beta_array = np.array([effective_beta])
+        results = self.run_simulation(beta_array)
+        
+        return float(results['thermal_avgs'][0])
+    
+    def approximate_ground_state(self) -> float:
+        """
+        Calls approximate_thermal_average with beta = infinity
+        
+        """
+
+        return self.approximate_thermal_average(math.inf)    
+        
 
     # ---------- Plot QuantumCircuit ----------
 
