@@ -24,18 +24,19 @@ energy (from diagonalization of the stored Hamiltonian operator).
 ```python
 from gauge_simulation import models
 
-H = models.build_hamiltonian(model = "tfim", size = [1,3])
+H = models.build_hamiltonian(model = "tfim", size = [2,2])
 
-apx = H.approx_ground_state()     # circuit-based approximation
-ext = H.exact_ground_state()      # exact diagonalization
+ext = H.exact_ground_state()
 
-print("Approximated ground:", apx)
-print("Exact ground:",        ext)
+apx = H.run_simulation(1.4)
+
+print(f"Ground State Energy:  {ext:.4f}")
+print(f"Approximated:  {apx:.4f}")
 ```
 
 ```text
-Approximated ground: -2.522029838042481
-Exact ground:        -2.744149144505002
+Ground State Energy:  -4.1047
+Approximated:  -3.7006 
 ```
 
 The bond parameters are currently set to π/4.
