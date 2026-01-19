@@ -25,7 +25,7 @@ Check `gauge_simulation_run.py` for other accessible quantities.
 ```python
 from gauge_simulation import models
 
-H = models.build_hamiltonian(model = "tfim", size = [2,2])
+H = models.build_hamiltonian(model = "tfim", lattice_size = [2,2])
 
 exact_groundstate = H.exact_ground_state()
 
