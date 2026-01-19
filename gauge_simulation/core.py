@@ -2,6 +2,8 @@
 
 import numpy as np
 from numpy import pi
+import psutil
+import math
 from scipy.integrate import cumulative_trapezoid
 
 from qiskit import QuantumCircuit
@@ -51,6 +53,34 @@ def get_nearest_neighbor_interactions(lattice_size: list[int]) -> list[tuple[int
                 interactions.append((i, i + cols))
 
     return interactions
+
+def get_system_qubit_limit(memory_factor: float = 0.75) -> int:
+    
+    """
+    Get the maximum number of qubits the local system can reasonably simulate
+    based on available memory (RAM)
+    
+    Args:
+        memory_factor (float): Fraction of the available RAM to dedicate to the 
+                               simulation (setting it to 75% by default)
+                               
+    Returns:
+        int: The maximum safe number of qubits that can be run for the simulation
+    
+    """
+    
+    # Get the available memory in bytes
+    available_mem_bytes = psutil.virtual_memory().available
+    
+    # Get fraction of memory to use
+    safe_mem_bytes = available_mem_bytes * memory_factor
+    
+    # Convert available memory to qubits
+    # For N qubits, there are 2^N amplitudes, each amp takes about 16 bytes
+    # total_memory = 16 * 2 ** N
+    max_safe_qubit = math.floor(math.log2(safe_mem_bytes / 16))
+    
+    return max_safe_qubit
 
 
 def kron_matrices(pauli_string: str) -> np.ndarray:
@@ -190,10 +220,13 @@ def tfim_generalized(lattice_size: list[int], trotter_steps: int) -> dict:
     total_num_qubits = 2*num_qubits + total_hamiltonian_terms
 
     # Check for simulation feasibility; good when running on a low-end to mid-range PC
-    if total_num_qubits > 20:
+    local_system_limit = get_system_qubit_limit()
+    
+    if total_num_qubits > local_system_limit:
         raise ValueError(
-            f"Total qubits required ({total_num_qubits}) exceeds 20. "
-            "Simulation may require excessive memory. Consider reducing num_qubits or trotter_steps."
+            f"Total qubits required ({total_num_qubits}) exceeds local system limit ({local_system_limit}). "
+            "Simulation requires more memory than is currently available. "
+            "Consider reducing lattice_size."
         )
 
     # Define parameters and PauliEvolutionGates
@@ -309,13 +342,16 @@ def xy_generalized(lattice_size: list[int], trotter_steps: int) -> dict:
     total_hamiltonian_terms = 2 * len(interaction_list)
     total_num_qubits = 2*num_qubits + total_hamiltonian_terms
 
-    # Check for simulation feasibility
-    if total_num_qubits > 20:
+    # Check for simulation feasibility; good when running on a low-end to mid-range PC
+    local_system_limit = get_system_qubit_limit()
+    
+    if total_num_qubits > local_system_limit:
         raise ValueError(
-            f"Total qubits required ({total_num_qubits}) exceeds 20. "
-            "Simulation may require excessive memory. Consider reducing num_qubits or trotter_steps."
+            f"Total qubits required ({total_num_qubits}) exceeds local system limit ({local_system_limit}). "
+            "Simulation requires more memory than is currently available. "
+            "Consider reducing lattice_size."
         )
-
+    
     # Define parameters and PauliEvolutionGates
     γ = Parameter('γ') # we are taking all the coefficients to be equal and == pi/4
     β = Parameter('β')
