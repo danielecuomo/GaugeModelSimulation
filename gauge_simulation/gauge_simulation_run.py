@@ -23,7 +23,7 @@ approx_groundstate = H.approximate_ground_state()
 exact_results = H.get_exact_thermal_quantities(beta_vals)
 
 # Get Approximate (simulated) Thermodynamic Quantities
-sim_results = H.run_simulation(beta_vals)
+sim_results = H.get_approximate_thermal_quantities(beta_vals)
 
 print(f"Exact Ground State Energy:      {exact_groundstate:.4f}")
 print(f"Approx. Ground State Energy:    {approx_groundstate:.4f}")

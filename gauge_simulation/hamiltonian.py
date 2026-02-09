@@ -170,7 +170,7 @@ class GaugeModel:
 
     # ---------- Simulation API ----------
 
-    def run_simulation(self, beta_vals: np.ndarray, backend=AerSimulator(method='statevector')) -> dict:
+    def get_approximate_thermal_quantities(self, beta_vals: np.ndarray, backend=AerSimulator(method='statevector')) -> dict:
         """
         Runs the imaginary-time evolution (ITE) simulation using Qiskit's Estimator 
         for a range of inverse temperatures $\beta$.
@@ -269,7 +269,7 @@ class GaugeModel:
 
         effective_beta = 1.4 if math.isinf(beta) or beta > 1.4 else beta
         beta_array = np.array([effective_beta])
-        results = self.run_simulation(beta_array)
+        results = self.get_approximate_thermal_quantities(beta_array)
         
         return float(results['thermal_avgs'][0])
     
