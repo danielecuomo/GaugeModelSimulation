@@ -11,8 +11,7 @@ This repository contains Wolfram Language code and Jupyter Notebooks for simulat
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/e4a8e1ce-cea8-42ba-a1a2-1c562cac03f4"
-      width="400"
-      style="border-radius:20px; box-shadow: 0px 10px 25px rgba(0,0,0,0.4);"
+      width="600"
        />
 </p>
 
