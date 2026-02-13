@@ -25,19 +25,19 @@ Check `gauge_simulation_run.py` for other accessible quantities.
 ```python
 from gauge_simulation import models
 
-H = models.build_hamiltonian(model = "tfim", lattice_size = [2,2])
+H = models.build_hamiltonian(model = "tfim", lattice_size=[1,3])
 
 exact_groundstate = H.exact_ground_state()
 
 approx_groundstate = H.approximate_ground_state()
 
-print(f"Ground State Energy:  {exact_groundstate:.4f}")
-print(f"Approximated:         {approx_groundstate:.4f}")
+print(f"Exact:  {exact_groundstate:.4f}")
+print(f"Approx: {approx_groundstate:.4f}")
 ```
 
 ```text
-Ground State Energy:  -4.1047
-Approximated:         -3.7006 
+Exact:  -2.7441
+Approx: -2.5255
 ```
 
 The bond parameters are currently set to π/4.
