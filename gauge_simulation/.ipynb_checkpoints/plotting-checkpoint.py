@@ -47,8 +47,6 @@ PLOT_DATA_MAP = {
     }
 }
 
-
-
 def plot_simulation_results(
     exact_results: dict, 
     sim_results: dict, 
