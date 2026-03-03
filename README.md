@@ -5,7 +5,6 @@
 ![Mathematica](https://img.shields.io/badge/Mathematica-14.2-red?logo=wolfram)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
-![Status](https://img.shields.io/badge/status-Complete-brightgreen)
 
 
 This repository contains Wolfram Language code and Jupyter Notebooks for simulating gauge-invariant models in imaginary time, computing thermal averages.
