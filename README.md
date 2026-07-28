@@ -1,6 +1,6 @@
 # Quantum simulation in imaginary time for gauge-invariant models
 
-[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.17060897.svg)](https://doi.org/10.5281/zenodo.17060897)
+[![DOI](https://img.shields.io/badge/DOI-10.1088%2F1402--4896%2Fae4dce-blue)](https://doi.org/10.1088/1402-4896/ae4dce)
 ![Mathematica](https://img.shields.io/badge/Mathematica-14.2-red?logo=wolfram)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
