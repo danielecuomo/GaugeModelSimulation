@@ -1,0 +1,13 @@
+# Tested with Python 3.12+
+
+numpy
+scipy
+matplotlib
+psutil
+
+qiskit
+qiskit-aer
+qiskit-ibm-runtime
+
+notebook
+ipykernel
