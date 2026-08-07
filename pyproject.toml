@@ -5,13 +5,6 @@ build-backend = "setuptools.build_meta"
 [project]
 name = "gauge_simulation"
 version = "1.0.0"
-description = "Quantum simulation in imaginary time for gauge-invariant models."
-readme = "README.md"
-requires-python = ">=3.12"
-license = { file = "LICENSE" }
-authors = [
-    { name = "Daniele Cuomo" }
-]
 
 [tool.setuptools]
 packages = ["gauge_simulation"]
