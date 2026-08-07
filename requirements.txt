@@ -1,13 +1,9 @@
-# Tested with Python 3.12+
+# Tested with Python 3.12.2
 
-numpy
-scipy
-matplotlib
-psutil
-
-qiskit
-qiskit-aer
-qiskit-ibm-runtime
-
-notebook
-ipykernel
+numpy==1.26.4
+scipy==1.13.1
+matplotlib==3.9.2
+psutil==5.9.0
+qiskit==2.3.0
+qiskit-aer==0.17.1
+qiskit-ibm-runtime==0.41.1
