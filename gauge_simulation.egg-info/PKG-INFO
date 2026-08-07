@@ -1,3 +1,35 @@
+Metadata-Version: 2.4
+Name: gauge_simulation
+Version: 1.0.0
+Summary: Quantum simulation in imaginary time for gauge-invariant models.
+Author: Daniele Cuomo
+License: MIT License
+        
+        Copyright (c) 2025 Daniele Cuomo
+        
+        Permission is hereby granted, free of charge, to any person obtaining a copy
+        of this software and associated documentation files (the "Software"), to deal
+        in the Software without restriction, including without limitation the rights
+        to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+        copies of the Software, and to permit persons to whom the Software is
+        furnished to do so, subject to the following conditions:
+        
+        The above copyright notice and this permission notice shall be included in all
+        copies or substantial portions of the Software.
+        
+        THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+        IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+        FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+        AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+        LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+        OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
+        SOFTWARE.
+        
+Requires-Python: >=3.12
+Description-Content-Type: text/markdown
+License-File: LICENSE
+Dynamic: license-file
+
 # Quantum simulation in imaginary time for gauge-invariant models
 
 [![DOI](https://img.shields.io/badge/DOI-10.1088%2F1402--4896%2Fae4dce-blue)](https://doi.org/10.1088/1402-4896/ae4dce)
@@ -40,14 +72,3 @@ Approx: -2.5255
 ```
 
 The bond parameters are currently set to π/4.
-
-## Installation
-
-Install the required dependencies and the package itself:
-
-```bash
-pip install -r requirements.txt
-pip install -e .
-```
-
-The second command installs the package in editable mode, allowing the example notebooks and Python scripts to import `gauge_simulation` directly.
