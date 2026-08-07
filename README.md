@@ -40,3 +40,14 @@ Approx: -2.5255
 ```
 
 The bond parameters are currently set to π/4.
+
+## Installation
+
+Install the required dependencies and the package itself:
+
+```bash
+pip install -r requirements.txt
+pip install -e .
+```
+
+The second command installs the package in editable mode, allowing the example notebooks and Python scripts to import `gauge_simulation` directly.
