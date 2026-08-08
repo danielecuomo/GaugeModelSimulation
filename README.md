@@ -7,7 +7,7 @@
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
 
 
-This repository contains and Jupyter Notebooks and Wolfram Language code  for simulating gauge-invariant models in imaginary time, computing thermal averages.
+This repository contains Jupyter Notebooks and Wolfram Language code  for simulating gauge-invariant models in imaginary time, computing thermal averages.
 
 <p align="center">
   <img src="https://github.com/user-attachments/assets/f941d69b-26e8-4fc3-8688-a06b39ce46ed" width="350" alt="Description">
