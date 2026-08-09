@@ -50,4 +50,4 @@ pip install -r requirements.txt
 pip install -e .
 ```
 
-The second command installs the package in editable mode, allowing the example notebooks and Python scripts to import `gauge_simulation` directly.
+The second command installs the package in editable mode, allowing the example notebooks to import `gauge_simulation` directly.
