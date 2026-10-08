@@ -1,0 +1,44 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "gauge-ite"
+version = "0.3.0"
+description = "Modular ancilla-resolved imaginary-time simulation and gauge-class thermodynamics"
+readme = "README.md"
+requires-python = ">=3.11,<3.14"
+license = {file = "LICENSE"}
+authors = [
+    {name = "Ibukunoluwa Adisa"},
+    {name = "Daniele Cuomo"},
+]
+keywords = ["quantum simulation", "imaginary time", "gauge classes", "Qiskit"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Topic :: Scientific/Engineering :: Physics",
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "pandas>=2.2",
+    "matplotlib>=3.8",
+    "pylatexenc>=2.10",
+    "qiskit>=2.3,<2.6",
+    "qiskit-aer>=0.17,<0.18",
+]
+
+[project.optional-dependencies]
+ibm = ["qiskit-ibm-runtime>=0.43"]
+
+[project.scripts]
+gauge-ite = "gauge_ite.cli:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+
+[tool.setuptools.packages.find]
+where = ["src"]
+include = ["gauge_ite*"]

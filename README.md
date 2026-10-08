@@ -51,3 +51,15 @@ pip install -e .
 ```
 
 The second command installs the package in editable mode, allowing the example notebooks to import `gauge_simulation` directly.
+
+
+## Ancilla-resolved GaugeITE extension
+
+The [`gaugeITE_ancillaResolved`](gaugeITE_ancillaResolved) directory contains
+the successor implementation for ancilla-resolved imaginary-time evolution.
+It adds configurable circuit architectures, gauge-flux classification,
+class-conditioned observables, quenched thermodynamic reconstruction, and
+modular simulator or hardware execution.
+
+Installation and usage instructions are provided in the
+[GaugeITE README](gaugeITE_ancillaResolved/README.md).

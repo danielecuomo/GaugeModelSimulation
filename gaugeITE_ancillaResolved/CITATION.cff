@@ -1,0 +1,15 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper and this software release."
+title: "Reconstructing Quenched Disorder Averages\\with Ancilla-Resolved Imaginary-Time Evolution"
+type: software
+version: 0.3.0
+date-released: 2026-09-18
+authors:
+  - family-names: Adisa
+    given-names: Ibukunoluwa
+  - family-names: Cuomo
+    given-names: Daniele
+abstract: >-
+  Qiskit tools for ancilla-resolved imaginary-time simulation, explicit
+  multi-step circuit architectures, Z2 gauge-flux classification, quenched
+  thermodynamic reconstruction, and modular simulator or hardware execution.
