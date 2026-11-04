@@ -5,6 +5,7 @@
 ![Mathematica](https://img.shields.io/badge/Mathematica-14.2-red?logo=wolfram)
 ![Python](https://img.shields.io/badge/Python-3.12%2B-3776AB?logo=python&logoColor=white)
 ![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)
+[![Qiskit Ecosystem](https://qisk.it/e-0747c243)](https://qisk.it/e)
 
 
 This repository contains Jupyter Notebooks and Wolfram Language code  for simulating gauge-invariant models in imaginary time, computing thermal averages.
