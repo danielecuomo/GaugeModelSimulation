@@ -53,7 +53,7 @@ def environment_report(backend_name: str | None = None) -> dict[str, object]:
         "packages": {
             name: _package_version(name)
             for name in (
-                "gauge-ite",
+                "gauge_simulation",
                 "numpy",
                 "scipy",
                 "pandas",

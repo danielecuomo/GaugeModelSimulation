@@ -4,7 +4,12 @@ The checked-in example remains on Aer.  IBM credentials are configured once
 with ``gauge-ite configure ibm`` and are never pasted into Python code.
 """
 
-from gauge_ite import ExecutionConfig, GaugeITEExperiment, ITEProtocol, TFIMSpec
+from gauge_simulation.ancilla_resolved import (
+    ExecutionConfig,
+    GaugeITEExperiment,
+    ITEProtocol,
+    TFIMSpec,
+)
 
 
 PROVIDER = "aer"

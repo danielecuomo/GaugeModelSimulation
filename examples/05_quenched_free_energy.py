@@ -2,8 +2,8 @@
 
 import numpy as np
 
-from gauge_ite import TFIMSpec
-from gauge_ite.studies import QuenchedFreeEnergyStudy
+from gauge_simulation.ancilla_resolved import TFIMSpec
+from gauge_simulation.ancilla_resolved.studies import QuenchedFreeEnergyStudy
 
 
 spec = TFIMSpec.rectangular(2, 3)

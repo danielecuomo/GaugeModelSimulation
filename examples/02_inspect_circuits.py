@@ -1,7 +1,7 @@
 """Save logical and transpiled views of every circuit architecture."""
 
-from gauge_ite import TFIMSpec
-from gauge_ite.workflows import inspect_architectures
+from gauge_simulation.ancilla_resolved import TFIMSpec
+from gauge_simulation.ancilla_resolved.workflows import inspect_architectures
 
 
 def main() -> None:

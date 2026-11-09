@@ -1,6 +1,6 @@
 """Execute circuits and decode every measured gauge record.
 
-The lower-level backend helpers in :mod:`gauge_ite.backends` remain useful
+The lower-level backend helpers in :mod:`gauge_simulation.ancilla_resolved.backends` remain useful
 for numerical studies.  This module provides the user-facing execution
 object: it keeps the circuit that was built, the circuit that was measured,
 the circuit that was actually sent to the simulator, and the resulting
@@ -179,7 +179,7 @@ def run_aer_experiment(
 ) -> CircuitExecution:
     """Backward-compatible convenience wrapper around :class:`AerExecutor`.
 
-    New code can use :class:`gauge_ite.executors.AerExecutor` directly.  The
+    New code can use :class:`gauge_simulation.ancilla_resolved.executors.AerExecutor` directly.  The
     import is local so importing the core package never opens a provider
     session and keeps backend dependencies isolated from the physics code.
     """

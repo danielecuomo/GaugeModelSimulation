@@ -4,6 +4,8 @@ message: "If you use this software, please cite the associated publication."
 authors:
   - family-names: Cuomo
     given-names: Daniele
+  - family-names: Adisa
+    given-names: Ibukunoluwa
 
 preferred-citation:
   type: article

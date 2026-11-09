@@ -1,6 +1,6 @@
 """Run a fresh trajectory and inspect its branch and class tables."""
 
-from gauge_ite import GaugeITEExperiment, ITEProtocol, TFIMSpec
+from gauge_simulation.ancilla_resolved import GaugeITEExperiment, ITEProtocol, TFIMSpec
 
 
 def main() -> None:

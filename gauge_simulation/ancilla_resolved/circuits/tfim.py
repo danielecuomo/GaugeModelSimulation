@@ -166,7 +166,7 @@ def build_tfim_circuit(spec: TFIMSpec, protocol: ITEProtocol) -> CircuitBundle:
         dynamic_record_register_name=dynamic_name,
     )
     circuit.metadata = {
-        "gauge_ite": True,
+        "ancilla_resolved": True,
         "architecture": protocol.architecture,
         "interpretation": protocol.interpretation,
         "angle_mapping": protocol.angle_mapping,

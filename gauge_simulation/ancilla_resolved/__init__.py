@@ -1,7 +1,7 @@
 """Imaginary-time and gauge-class simulation tools.
 
 The package keeps hardware-provider imports optional. Importing
-``gauge_ite`` therefore exposes the mathematical and circuit-building API
+``gauge_simulation.ancilla_resolved`` therefore exposes the mathematical and circuit-building API
 without opening a provider session or configuring Matplotlib.
 """
 

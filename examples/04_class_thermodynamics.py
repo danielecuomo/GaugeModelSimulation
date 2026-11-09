@@ -1,7 +1,7 @@
 """Calculate exact thermodynamics for every gauge-flux class."""
 
-from gauge_ite import TFIMSpec
-from gauge_ite.thermodynamics import exact_class_thermodynamics
+from gauge_simulation.ancilla_resolved import TFIMSpec
+from gauge_simulation.ancilla_resolved.thermodynamics import exact_class_thermodynamics
 
 
 def main() -> None:

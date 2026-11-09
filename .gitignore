@@ -16,11 +16,10 @@ venv/
 .idea/
 .vscode/
 
-# Generated outputs
+# Generated experiment output
 runs/
 artifacts/
 decoded_counts/
 build/
 dist/
-
 tmp/

@@ -1,6 +1,6 @@
-# GaugeITE
+# Ancilla-resolved TFIM extension
 
-`GaugeITE` is a Qiskit package for ancilla-resolved imaginary-time simulation
+`gauge_simulation.ancilla_resolved` is the integrated Qiskit extension for ancilla-resolved imaginary-time simulation
 of transverse-field Ising models. It builds the circuits, retains every
 ancilla outcome, converts the measured records into gauge-flux classes, and
 computes class-conditioned thermodynamic quantities.
@@ -17,22 +17,18 @@ The package supports:
 
 ## Installation
 
-Clone the repository and install the package:
+Clone the repository and install the unified package:
 
 ```bash
 python -m pip install -e .
 ```
 
-Aer is installed with the package. For IBM Quantum support, use:
-
-```bash
-python -m pip install -e ".[ibm]"
-```
+Aer and IBM Runtime support are installed with the package.
 
 ## Basic simulation
 
 ```python
-from gauge_ite import (
+from gauge_simulation.ancilla_resolved import (
     ExecutionConfig,
     GaugeITEExperiment,
     ITEProtocol,
@@ -115,7 +111,7 @@ print(energy_result.analysis["direct_unconditioned_energy"])
 ## Exact class thermodynamics
 
 ```python
-from gauge_ite.thermodynamics import exact_class_thermodynamics
+from gauge_simulation.ancilla_resolved.thermodynamics import exact_class_thermodynamics
 
 class_table = exact_class_thermodynamics(
     TFIMSpec.rectangular(2, 3),
@@ -132,7 +128,7 @@ partition function, multiplicity weight, and annealed class weight.
 ```python
 import numpy as np
 
-from gauge_ite import QuenchedFreeEnergyStudy, TFIMSpec
+from gauge_simulation.ancilla_resolved import QuenchedFreeEnergyStudy, TFIMSpec
 
 study = QuenchedFreeEnergyStudy(
     spec=TFIMSpec.rectangular(2, 3),

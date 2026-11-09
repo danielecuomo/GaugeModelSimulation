@@ -1,7 +1,7 @@
 """Smallest complete energy and gauge-class example."""
 
-from gauge_ite import ITEProtocol, TFIMSpec
-from gauge_ite.workflows import quickstart_report
+from gauge_simulation.ancilla_resolved import ITEProtocol, TFIMSpec
+from gauge_simulation.ancilla_resolved.workflows import quickstart_report
 
 
 def main() -> None:

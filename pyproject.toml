@@ -4,14 +4,29 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "gauge_simulation"
-version = "1.0.0"
-description = "Quantum simulation in imaginary time for gauge-invariant models."
+version = "1.1.0"
+description = "Quantum simulation in imaginary time for gauge-invariant models, including ancilla-resolved TFIM workflows."
 readme = "README.md"
-requires-python = ">=3.12"
+requires-python = ">=3.11,<3.14"
 license = { file = "LICENSE" }
 authors = [
-    { name = "Daniele Cuomo" }
+    { name = "Daniele Cuomo" },
+    { name = "Ibukunoluwa Adisa" },
+]
+dependencies = [
+    "numpy>=1.26",
+    "scipy>=1.13",
+    "pandas>=2.2",
+    "matplotlib>=3.8",
+    "psutil>=5.9",
+    "pylatexenc>=2.10",
+    "qiskit>=2.3,<2.6",
+    "qiskit-aer>=0.17,<0.18",
+    "qiskit-ibm-runtime>=0.41",
 ]
 
-[tool.setuptools]
-packages = ["gauge_simulation"]
+[project.scripts]
+gauge-ite = "gauge_simulation.ancilla_resolved.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["gauge_simulation*"]

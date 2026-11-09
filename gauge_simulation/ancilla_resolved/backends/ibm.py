@@ -1,6 +1,6 @@
 """Backward-compatible IBM adapter.
 
-New code should use :class:`gauge_ite.executors.IBMRuntimeExecutor`, which
+New code should use :class:`gauge_simulation.ancilla_resolved.executors.IBMRuntimeExecutor`, which
 adds account profiles, smart backend selection, submission safety, and a
 provider-neutral result object.
 """
