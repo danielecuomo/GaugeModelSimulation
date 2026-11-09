@@ -7,7 +7,7 @@
 [![Qiskit Ecosystem](https://qisk.it/e-0747c243)](https://qisk.it/e)
 
 
-This repository contains Jupyter Notebooks and Wolfram Language code for
+This repository contains Jupyter Notebooks for
 simulating gauge-invariant models in imaginary time and computing thermal
 averages.  It has two integrated paths:
 
